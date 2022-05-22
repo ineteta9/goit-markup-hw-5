@@ -81,11 +81,10 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-  transition: color 250ms; 
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  }
 
-.site-nav li:not(:last-child), .contakt li:not(:last-child) {
+.site-nav li:not(:last-child), 
+.contakt li:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -113,8 +112,7 @@ ul {
   color: var(--title-text-color);
   padding-top: 32px;
   padding-bottom: 32px;
-  transition: color 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+  }
 
 .site-nav a:hover,
 .site-nav a:focus {
@@ -125,8 +123,6 @@ ul {
 
 .contakt a {
   color: var(--contakt-color);
-  transition: color 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
 .contakt a:hover,
@@ -137,7 +133,7 @@ ul {
 }
 .icon-mail, .icon-tel {
   margin-right: 10px;
-  fill: currentColor}
+  fill: currentColor;}
 
 .icon-mail:hover, .icon-tel:hover {
   color: var(--accent-color);
@@ -156,7 +152,11 @@ ul {
   list-style: none;
 }
 .link {
-  position: relative;
+    display: block;
+    position: relative;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .current::after {
   content: '';
@@ -173,8 +173,8 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transform: scaleX(0);
 }
-.current:hover::after,
-.current:focus::after {
+.link:hover::after,
+.link:focus::after {
   opacity: 1;
   transform: scaleX(1);
 }
