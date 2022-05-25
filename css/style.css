@@ -388,7 +388,7 @@ p {margin: 0;}
   content: '';
   left: 0;
   bottom: 0;
-  z-index: 1;
+  z-index: 0;
   width: 100%;
   height: 70px;
   background: rgba(47, 48, 58, 0.8);}
@@ -396,7 +396,7 @@ p {margin: 0;}
 .about-text {
   position: absolute;
   display: flex;
-  z-index: 2;
+  z-index: 1;
   padding-top: 30px;
   padding-bottom: 30px;
   font-weight: 700;
@@ -453,9 +453,6 @@ p {margin: 0;}
   background: var(--white-color);
   padding-top: var(--card-set-gap);
   padding-bottom: var(--card-set-gap);
-  border: 1px solid #eeeeee;
-  border-top: 0;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;}
 
 /*.icon-link {
@@ -537,13 +534,12 @@ padding-right: 32px;}
   justify-content: center;}
 
 .clients-style {
-  display: flex;
-  justify-content: center;
-  align-content: center;
   width: 100%;
   height: 100%;
-  fill: var(--icon-color);
-}
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
 
 .client-item-list {
   width: 170px;
@@ -557,10 +553,6 @@ padding-right: 32px;}
   margin-right: var(--card-set-gap);}
 
 .client-item-icon {
-  display: flex;
-  align-items: center;
-  background-repeat: no-repeat;
-  align-items: center;
   fill: var(--icon-color);
 }
 
@@ -934,7 +926,7 @@ overflow: hidden;
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
-}
+  }
 
 .backdrop-icon {
   width: 18px;
